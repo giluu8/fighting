@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'silver';
+    src: url(../assets/fonts/Silver.ttf);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: seashell
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5d7b921aa20ea468a889fb20/1568380647329-ZNDIV6NMKQUSLWRH6FVH/nYuVFMIa.gif?format=1500w");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.information{
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fplayer-vs-player&psig=AOvVaw1f4pQjvwS-s7c14U9VtCiL&ust=1728131385757000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLCVhKDd9IgDFQAAAAAdAAAAABAp");
+    background-repeat: no-repeat;
+    
+}
+
+.hud {
+    position: absolute;
+    display: none;
+    width: 50%;
+    align-items: center;
+    padding: 20px;
+}
+
+.healthLayout {
+    position: relative;
+    height: 30px;
+    width: 100%;
+}
+
+.remainingHealthbar {
+    background-color: #EF4444;
+    height: 30px;
+    width: 100%;
+}
+
+.totalHealthBar {
+    position: absolute;
+    background-color: #8B5CF6;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.timer {
+    background-color: wheat;
+    font-family: 'silver';
+    font-size: 35px;
+    height: 50px;
+    width: 75px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.result {
+    position: absolute;
+    font-family: 'silver';
+    font-size: 100px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: purple;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+.game {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #gameWindow {
+    border: 2px solid black;
+} */
+
+.keymapping {
+    display: flex;
+    justify-content: center;
+    font-family: 'silver';
+    font-size: 20px;
+}
+
+.keys {
+    margin: 80px;
+    padding: 70px;
+    border: 2px solid black;
+    background-color: goldenrod;
+}
+
+.keys h1 {
+    margin: 0px
+}
+
+.menu {
+    font-family: silver;
+    color: whitesmoke;
+    position: absolute;
+    width: 1024px;
+    height: 576px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 7px;
+    /* text-decoration: underline overline; */
+    
+}
+
+.title {
+    font-size: 160px;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.menuOption {
+    border: white;
+    border-width: 1px 5px 5px 1px;
+    font-size: 50px;
+    padding: 10px 20px 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    text-decoration: underline overline; 
+}
+
+.menuOption:hover {
+    /* box-shadow: inset 350px 0 0 0 #9eade9; */
+    
+    transform: scale(1.5);
+}
+
+.author {
+    padding-top: 10px;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #A8EEE3 67%,
+            #9eade9 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 190px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
